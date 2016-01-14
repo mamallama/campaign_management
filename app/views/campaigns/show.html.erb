@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @campaign.user_id %>
+</p>
+
+<p>
+  <strong>Ui campaign:</strong>
+  <%= @campaign.ui_campaign_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @campaign.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @campaign.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @campaign.status %>
+</p>
+
+<p>
+  <strong>Locale:</strong>
+  <%= @campaign.locale %>
+</p>
+
+<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
+<%= link_to 'Back', campaigns_path %>
